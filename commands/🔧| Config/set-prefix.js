@@ -5,8 +5,8 @@ const footer = require('../../configuration/footer.json')
 
 
 module.exports =  {
-  name : 'set-prefix',
-  aliases : ['prefix'],
+  name : 'h!',
+  aliases : ['h!'],
 
 
   run : async (client, message, args) => {
@@ -81,7 +81,7 @@ module.exports =  {
     
     db.set(`prefix_${message.guild.id}`, args[0])
   await message.channel.send({embed : {
-        description : `✅ \`seted prefix to : ${args[0]}\``,
+        description : `✅ \`New Prefix Is: ${args[0]}\``,
         color : color.sucess,
         footer  : {
           text : footer.footertext,

@@ -44,7 +44,7 @@ module.exports = {
           serverQueue.connection.dispatcher.end();
           await channel.leave();
           return message.channel.send({embed:{
-        description : `💥 \`Something went wrong in the bot system , try again later\``,
+        description : `💥 \`Something Went Wrong In The Bot, Wtf are you doing\``,
         color : color.boom,
         footer : {
           text : footer.footertext,
